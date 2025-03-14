@@ -13,6 +13,7 @@ const MovieByTitle = ({title}) => {
                     <p>Director: {data.director}</p>
                     <p>Rating: {data.rating}</p>
                     <p>Actors: {data.actors.join(", ")}</p>
+                    <img src={data.posterUrl} alt="Poster Image" />
                 </div>
             ): loading && <p>Loading...</p> }
             
