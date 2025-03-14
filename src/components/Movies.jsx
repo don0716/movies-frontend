@@ -7,7 +7,7 @@ const Movies = () => {
     
     return (
         <>
-        {data.map(movie => (
+        {data?.map(movie => ( //optional chaining
             <li>{movie.title}</li>
         ))}
         </>
